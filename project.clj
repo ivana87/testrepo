@@ -14,8 +14,10 @@
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}}
   :plugins [[lein-release "1.0.5"]]
-  :scm "https://github.com/ivana87/testrepo.git"
-  :deploy-repositories [["releases" {:url "http://localhost:8081/repository/lein-releases/"
-                                     :username :env :password :env }]
+  ;:scm "https://github.com/ivana87/testrepo.git"
+  ;:lein-release {:deploy-via :git}
+  :deploy-repositories [["releases" {:url "http://localhost:8081/repository/maven-releases/"
+                                     :username "admin" :password "admin123"
+                                     :sign-releases false}]
                         ["snapshots" {:url "http://localhost:8081/repository/maven-snapshots/"
-                                      :username :env :password :env}]])
+                                      :username "admin" :password "admin123"}]])
