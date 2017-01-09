@@ -1,4 +1,4 @@
-(defproject testapp "0.1.0-SNAPSHOT"
+(defproject testapp "0.1.0"
   :description "FIXME: write description"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
@@ -13,6 +13,8 @@
   :main ^:skip-aot testapp.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}}
+  :plugins [[lein-release "1.0.5"]]
+  :scm "https://github.com/ivana87/testrepo.git"
   :deploy-repositories [["releases" {:url "http://localhost:8081/repository/lein-releases/"
                                      :username :env :password :env }]
                         ["snapshots" {:url "http://localhost:8081/repository/maven-snapshots/"
