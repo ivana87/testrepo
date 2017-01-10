@@ -1,4 +1,4 @@
-(defproject testapp "0.1.6"
+(defproject testapp "0.1.7-SNAPSHOT"
   :description "FIXME: write description"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
@@ -16,10 +16,11 @@
   :plugins [[lein-release "1.0.5"]]
   ;:scm "https://github.com/ivana87/testrepo.git"
   ;:lein-release {:deploy-via :git}
-  :deploy-repositories [["releases" {:url "http://localhost:8081/repository/maven-releases/"
-                                     ;:username "admin" :password "admin123"
+  :deploy-repositories [["releases" {:url   "http://localhost:8081/repository/maven-releases/"
+                                     :username "admin" :password "admin123"
                                      :creds :gpg
-                                     :sign-releases true}]
+                                     :sign-releases false
+                                     }]
                         ["snapshots" {:url "http://localhost:8081/repository/maven-snapshots/"
                                       ;:username "admin" :password "admin123"
                                       :creds :gpg
