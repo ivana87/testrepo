@@ -45,7 +45,7 @@
 ; take-while on processed and sorted data- makes sense. performance wise...
 ; some - when we just need to check if at least one element for the collection satisfies one condition
 ; sort and sort-by
-; small change
+; small change, another change
 
 
 (reduce (fn [new-map [key val]]
