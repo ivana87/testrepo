@@ -1,4 +1,4 @@
-(defproject testapp "0.1.5-SNAPSHOT"
+(defproject testapp "0.1.5"
   :description "FIXME: write description"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
@@ -18,6 +18,6 @@
   ;:lein-release {:deploy-via :git}
   :deploy-repositories [["releases" {:url "http://localhost:8081/repository/maven-releases/"
                                      :username "admin" :password "admin123"
-                                     :sign-releases false}]
+                                     :sign-releases true}]
                         ["snapshots" {:url "http://localhost:8081/repository/maven-snapshots/"
                                       :username "admin" :password "admin123"}]])
